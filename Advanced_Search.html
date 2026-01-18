@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <meta charset = "UTF-8">
+    <head>
+        <meta  name = "viewport" content = "width = device-width initial-scale = 1.0">
+        <title>
+            Google Advanced Search
+        </title>
+        <link href = "stylesheet.css" rel = "stylesheet">
+    </head>
+    <body>
+        <div>
+            <div>
+                <a href = "index.html">Google</a>
+            </div>
+            <div>
+                <a href = "index.html">Back to Google Search</a>
+            </div>
+            <div>
+                <p id = "advanced-search">Advanced Search</p>
+            </div>
+            <div>
+                <div>
+                    <p>Find pages with...</p>
+                    <form action = "https://www.google.com/search">
+                        <label>all these words:</label>
+                        <input type="text" name="as_q" id = "as_q"><br>
+                        <label>this exact word or phrase:</label>
+                        <input type="text" name="as_epq" id = "as_epq"><br>
+                        <label>any of these words:</label>
+                        <input type="text" name="as_oq" id = "as_oq"><br>
+                        <label>none of these words:</label>
+                        <input type="text" name="as_eq" id = "as_eq"><br>
+                        <label> numbers ranging from: </label>
+                        <div>
+                            <input type = "number" name = "as_nlo" id = "as_nlo">
+                            <label> to</label>
+                            <input type = "number" name = "as_nhi" id = "as_nhi">
+                        </div>
+                        <input type="submit" value="Advanced Search">
+
+                    </form>
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p>Help</p>
+        <p>Privacy</p>
+        <p>Terms</p>
+    </footer>
+</html>

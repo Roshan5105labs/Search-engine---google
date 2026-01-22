@@ -7,17 +7,34 @@
         <link rel = "stylesheet" href = "stylesheet.css">
     </head>
     <body>
-        <div>
-            <a href = "index.html">Google</a>
+        <div id = "Heading_logo">
+            <h1>
+            <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span>
+            </h1>
+        </div>
+        <div class = "top-left-buttons">
+            <button class = "little-box">
+                <a href = "index.html" style="text-decoration: none; color: inherit;">Back To Google Search</a>
+            </button>
         </div>
         <div>
-            <a href = "index.html">Back to Google Search</a>
+            <div class = "top-right-buttons">
+                <button class = "little-box">
+                    <a href = "Advanced_Search.html"  style="text-decoration: none; color: inherit;">Advanced Search</a>
+                </button>
+            </div>
         </div>
-        <div>
-            <form action = "https://www.google.com/search">
+       <div>
+            <form action = "https://www.google.com/search" method="get">
                 <input type="hidden" name="tbm" value="isch">
-                <input type = "text" name = "q" placeholder = "Search for images">
-                <button type = "submit">Google Search</button>
+                <div class = "search">
+                        <input type="text" name="q" placeholder = "Image Search" id = "search-box" autofocus = true>
+                </div>
+                <div class = "search">
+                    <div class = "align-center">
+                        <button type="submit" class = "little-box">Google Search</button>
+                    </div>    
+                </div>
             </form>
         </div>
     </body>

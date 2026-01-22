@@ -17,25 +17,24 @@
                 <a href = "index.html" style="text-decoration: none; color: inherit;">Back To Google Search</a>
             </button>
         </div>
-        <div>
-            <div class = "top-right-buttons">
-                <button class = "little-box">
-                    <a href = "Advanced_Search.html"  style="text-decoration: none; color: inherit;">Advanced Search</a>
-                </button>
+        <div class = "top-right-buttons">
+            <button class = "little-box">
+                <a href = "Advanced_Search.html"  style="text-decoration: none; color: inherit;">Advanced Search</a>
+            </button>
+        </div>
+
+       
+        <form action = "https://www.google.com/search" method="get">
+            <input type="hidden" name="tbm" value="isch">
+            <div class = "search">
+                <input type="text" name="q" placeholder = "Image Search" id = "search-box" autofocus = true>
             </div>
-        </div>
-       <div>
-            <form action = "https://www.google.com/search" method="get">
-                <input type="hidden" name="tbm" value="isch">
-                <div class = "search">
-                        <input type="text" name="q" placeholder = "Image Search" id = "search-box" autofocus = true>
-                </div>
-                <div class = "search">
-                    <div class = "align-center">
-                        <button type="submit" class = "little-box">Google Search</button>
-                    </div>    
-                </div>
-            </form>
-        </div>
+            <div class = "search">
+                <div class = "align-center">
+                    <button type="submit" class = "little-box">Google Search</button>
+                </div>    
+            </div>
+        </form>
+       
     </body>
 </html>

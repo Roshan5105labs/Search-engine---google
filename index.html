@@ -9,33 +9,26 @@
         <link href = "stylesheet.css" rel = "stylesheet">
     </head>
     <body>
-        <div id = "Heading_logo">
-            <h1>
-            <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span>
-            </h1>
+        <div class = "main-container" style="align-items: stretch;">
+            <img src = "Google_2015_logo.svg.webp" alt = "Google Logo" class = "google-logo">
+            <form action = "https://www.google.com/search" method="get">
+                <div class = "search" style="width:100%;">
+                    <input type="text" name="q" placeholder = "Google Search" id = "search-box" autofocus = true>
+                </div>
+                <div class = "search">
+                    <div class = "align-center">
+                        <button type="submit" class = "little-box">Google Search</button>
+                        <button type = "submit" name = "btnI" value = 1 class = "little-box">I'm Feeling Lucky</button>
+                    </div>    
+                </div>
+            </form>
         </div>
         
         <div class = "top-right-buttons">
-            <button class = "little-box">
-                <a href = "Advanced_Search.html" style="text-decoration: none; color: inherit;">Advanced Search</a>
-            </button>
-            <button class = "little-box">
-                <a href = "Image_Search.html"  style="text-decoration: none; color: inherit;">Image Search</a>
-            </button>
+            <a href="Image_Search.html" class="top-link">Images</a>
+            <a href="Advanced_Search.html" class="top-link">Advanced search</a>
+            <button class="little-box" style = "background-color: #1a73e8; color: white;">Sign in</button>
         </div>
-            
-
-        <form action = "https://www.google.com/search" method="get">
-            <div class = "search">
-                    <input type="text" name="q" placeholder = "Google Search" id = "search-box" autofocus = true>
-            </div>
-            <div class = "search">
-                <div class = "align-center">
-                    <button type="submit" class = "little-box">Google Search</button>
-                    <button type = "submit" name = "btnI" value = 1 class = "little-box">I'm Feeling Lucky</button>
-                </div>    
-            </div>
-        </form>
            
     </body>
 </html>

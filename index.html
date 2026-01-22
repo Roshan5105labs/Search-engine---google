@@ -9,21 +9,37 @@
         <link href = "stylesheet.css" rel = "stylesheet">
     </head>
     <body>
-        <div>
-            <p>Google</p>
+        <div id = "Heading_logo">
+            <h1 id = "logo">
+            <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span>
+            </h1>
         </div>
         <div>
-            <div>
-                <a href = "Advanced_Search.html">Advanced Search</a>
-            </div>
-            <div>
-                <a href = "Image_Search.html">Image Search</a>
+            <div class = "top-right-buttons">
+                <button class = "little-box">
+                    <a href = "Advanced_Search.html" style="text-decoration: none; color: inherit;">Advanced Search</a>
+                </button>
+                <button class = "little-box">
+                    <a href = "Image_Search.html"  style="text-decoration: none; color: inherit;">Image Search</a>
+                </button>
             </div>
             
         </div>
-        <form action = "https://www.google.com/search">
-            <input type="text" name="q" placeholder = "Search ">
-            <input type="submit" value="Google Search">
-        </form>
+        <div>
+            <form action = "https://www.google.com/search" method="get">
+                <div class = "search-surrounding">
+                    <center>
+                        <input type="text" name="q" placeholder = "Google Search" id = "search-box" >
+                    </center>
+                </div>
+                
+                <div>
+                    <center>
+                        <button type="submit" class = "little-box">Google Search</button>
+                        <button type = "submit" name = "btnI" value = 1 class = "little-box">I'm Feeling Lucky</button>
+                    </center>
+                </div>
+            </form>
+        </div>
     </body>
 </html>

@@ -17,37 +17,51 @@
                 <label style="margin-left:10px">Advanced Search</label>    
             </div>
             <div>
-                <div>
-                    <p style = "margin: 25px 45px; font-size: 16px;">Find pages with...</p>
+                <div class = "advanced-search-form">
+                    <p>Find pages with...</p>
                     <form action = "https://www.google.com/search">
-                        <label>all these words:</label>
-                        <input type="text" name="as_q" id = "as_q"><br>
-                        <label>this exact word or phrase:</label>
-                        <input type="text" name="as_epq" id = "as_epq"><br>
-                        <label>any of these words:</label>
-                        <input type="text" name="as_oq" id = "as_oq"><br>
-                        <label>none of these words:</label>
-                        <input type="text" name="as_eq" id = "as_eq"><br>
-                        <label> numbers ranging from: </label>
-                        <div>
-                            <input type = "number" name = "as_nlo" id = "as_nlo">
-                            <label> to</label>
-                            <input type = "number" name = "as_nhi" id = "as_nhi">
-                        </div>
+                        <div class="advanced-row">
+  <label class="advanced-context">all these words:</label>
+  <input type="text" name="as_q" class="advanced-input">
+</div>
+
+<div class="advanced-row">
+  <label class="advanced-context">this exact word or phrase:</label>
+  <input type="text" name="as_epq" class="advanced-input">
+</div>
+
+<div class="advanced-row">
+  <label class="advanced-context">any of these words:</label>
+  <input type="text" name="as_oq" class="advanced-input">
+</div>
+
+<div class="advanced-row">
+  <label class="advanced-context">none of these words:</label>
+  <input type="text" name="as_eq" class="advanced-input">
+</div>
+
+<div class="advanced-row">
+  <label class="advanced-context">numbers ranging from:</label>
+
+  <div class="range-box">
+    <input type="number" name="as_nlo" class="advanced-input">
+    <span>to</span>
+    <input type="number" name="as_nhi" class="advanced-input">
+  </div>
+</div>
+
                         <input type="submit" value="Advanced Search">
 
                     </form>
                 </div>
-                <div>
-
-                </div>
-
             </div>
         </div>
     </body>
-    <footer>
-        <p>Help</p>
-        <p>Privacy</p>
-        <p>Terms</p>
+    <footer style="position: absolute; bottom: 0; width: 100%; background-color: #f2f2f2; padding: 50px 0;">
+        <div class ="footer-left">
+            <a  href="https://support.google.com/websearch/?p=ws_results_help&amp;hl=en-IN&amp;fg=1" class = footer-text>Help</a>
+            <a  href="https://policies.google.com/privacy?hl=en-IN&amp;fg=1" class = footer-text>Privacy</a>
+            <a  href="https://policies.google.com/terms?hl=en-IN&amp;fg=1" class = footer-text>Terms</a>
+        </div>
     </footer>
 </html>

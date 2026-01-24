@@ -183,18 +183,26 @@ body {
   column-gap: 20px;
 }
 
-
-
-.range-box {
-  display: flex;
-  gap: 10px;
+.range-box{
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;  /* input | to | input */
   align-items: center;
+  column-gap: 10px;
+  width: 100%;
 }
 
-.range-box .advanced-input {
-  max-width: 300px;
-
+.range-box input.advanced-input{
+  width: 100%;
+  max-width: none;   /* IMPORTANT */
 }
+
+.range-box span{
+  font-size: 14px;
+  color: #212324;
+  text-align: center;
+  white-space: nowrap;
+}
+
 
 
 

@@ -18,29 +18,39 @@
             </div>
             <div>
                 <div class = "advanced-search-form">
-                    <p>Find pages with...</p>
+                    <div class="advanced-row advanced-header">
+                        <p>Find pages with...</p>
+                        <div></div>
+                        <span class="instructions" style="font-weight: bold; font-size: 13px;">To do this in the search box.</span>
+                    </div>
+
+                    
                     <form action = "https://www.google.com/search">
                         <div class="advanced-row">
                             <label class="advanced-context">all these words:</label>
                             <input type="text" name="as_q" class="advanced-input">
-                            </div>
+                            <span class = "instructions">Type the important words: tri-colour rat terrier</span>
+                        </div>
 
-                            <div class="advanced-row">
+                        <div class="advanced-row">
                             <label class="advanced-context">this exact word or phrase:</label>
                             <input type="text" name="as_epq" class="advanced-input">
-                            </div>
+                            <span class = "instructions">Put exact words in quotes: "rat terrier"</span>
+                        </div>
 
-                            <div class="advanced-row">
+                        <div class="advanced-row">
                             <label class="advanced-context">any of these words:</label>
                             <input type="text" name="as_oq" class="advanced-input">
-                            </div>
+                            <span class = "instructions">Type OR between all the words you want: miniature OR standard</span>
+                        </div>
 
-                            <div class="advanced-row">
+                        <div class="advanced-row">
                             <label class="advanced-context">none of these words:</label>
                             <input type="text" name="as_eq" class="advanced-input">
-                            </div>
+                            <span class = "instructions">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</span>
+                        </div>
 
-                            <div class="advanced-row">
+                        <div class="advanced-row">
                             <label class="advanced-context">numbers ranging from:</label>
 
                             <div class="range-box">
@@ -48,17 +58,17 @@
                                 <span>to</span>
                                 <input type="number" name="as_nhi" class="advanced-input">
                             </div>
+                            <span class = "instructions">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</span>
                         </div>
                         <div class="submit-row">
                             <input type="submit" value="Advanced Search" class = "little-box" style = "margin-right: 0px; font-weight:bold; font-size: 11px;background-color: #1a73e8; color: white;">
                         </div>
-
                     </form>
                 </div>
             </div>
         </div>
     </body>
-    <footer style="position: absolute; bottom: 0; width: 100%; background-color: #f2f2f2; padding: 50px 0;">
+    <footer style="position: fixed; bottom: 0; width: 100%; background-color: #f2f2f2; padding: 15px 0; border-top: 1px solid #e4e4e4;">
         <div class ="footer-left">
             <a  href="https://support.google.com/websearch/?p=ws_results_help&amp;hl=en-IN&amp;fg=1" class = footer-text>Help</a>
             <a  href="https://policies.google.com/privacy?hl=en-IN&amp;fg=1" class = footer-text>Privacy</a>

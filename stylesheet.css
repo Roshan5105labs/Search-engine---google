@@ -185,7 +185,7 @@ body {
 
 .range-box{
   display: grid;
-  grid-template-columns: 1fr auto 1fr;  /* input | to | input */
+  grid-template-columns: 1fr auto 1fr; 
   align-items: center;
   column-gap: 10px;
   width: 100%;
@@ -193,7 +193,7 @@ body {
 
 .range-box input.advanced-input{
   width: 100%;
-  max-width: none;   /* IMPORTANT */
+  max-width: none;   
 }
 
 .range-box span{
@@ -203,6 +203,12 @@ body {
   white-space: nowrap;
 }
 
+.submit-row {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 727px; 
+  width: 100%;
+}
 
 
 
